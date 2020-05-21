@@ -33,7 +33,7 @@ def jalan(z):
         sys.stdout.flush()
         time.sleep(0.01)
 
-logo = " \x1b[1;92m█████████\n \x1b[1;92m█▄█████▄█         \x1b[1;97m●▬▬▬▬▬▬▬▬▬๑۩۩๑▬▬▬▬▬▬▬▬●\n \x1b[1;92m█ \x1b[1;93m▼▼▼▼▼  \x1b[1;97m- _ --_-- \x1b[1;92m╔╦╗┌─┐┬─┐┬┌─   ╔═╗╔╗ \n \x1b[1;92m█  \x1b[1;97m  \x1b[1;97m_-_-- -_ --__ \x1b[1;92m ║║├─┤├┬┘├┴┐───╠╣ ╠╩╗\n \x1b[1;92m█ \x1b[1;93m▲▲▲▲▲ \x1b[1;97m--  - _ -- \x1b[1;92m═╩╝┴ ┴┴└─┴ ┴   ╚  ╚═╝  \x1b[1;93mxKILLERDEADx\n \x1b[1;92m█████████         \x1b[1;97m«==========✧==========»\n \x1b[1;92m ██ ██\n \x1b[1;97m╔════════════════════════════════════════════════╗\n \x1b[1;97m║ \x1b[1;93m*  \x1b[1;97mReCode   \x1b[1;91m:  \x1b[1;96m Muhammad Abid  \x1b[1;97m                   ║\n \x1b[1;97m║ \x1b[1;93m*  \x1b[1;97mGitHub   \x1b[1;91m:  \x1b[1;92m \x1b[92mhttps://github.com/xKILLERDEADx\x1b[    \x1b[1;97m ║\n \x1b[1;97m║ \x1b[1;93m*  \x1b[1;97mFB       \x1b[1;91m:   \x1b[1;92\x1b[92mhttps://fb.me/Abid42db\x1b[     \x1b[1;97m   ║   \n \x1b[1;97m╚════════════════════════════════════════════════╝"  '\n\x1b[1;92m[*] Silahkan Login Operamini Agar Tidak Checkpoint\n'
+logo = " \x1b[1;92m█████████\n \x1b[1;92m█▄█████▄█         \x1b[1;97m●▬▬▬▬▬▬▬▬▬๑۩۩๑▬▬▬▬▬▬▬▬●\n \x1b[1;92m█ \x1b[1;93m▼▼▼▼▼  \x1b[1;97m- _ --_-- \x1b[1;92m╔╦╗┌─┐┬─┐┬┌─   ╔═╗╔╗ \n \x1b[1;92m█  \x1b[1;97m  \x1b[1;97m_-_-- -_ --__ \x1b[1;92m ║║├─┤├┬┘├┴┐───╠╣ ╠╩╗\n \x1b[1;92m█ \x1b[1;93m▲▲▲▲▲ \x1b[1;97m--  - _ -- \x1b[1;92m═╩╝┴ ┴┴└─┴ ┴   ╚  ╚═╝  \x1b[1;93mxKILLERDEADx\n \x1b[1;92m█████████         \x1b[1;97m«==========✧==========»\n \x1b[1;92m ██ ██\n \x1b[1;97m╔════════════════════════════════════════════════╗\n \x1b[1;97m║ \x1b[1;93m*  \x1b[1;97mReCode   \x1b[1;91m:  \x1b[1;96m Muhammad Abid  \x1b[1;97m                   ║\n \x1b[1;97m║ \x1b[1;93m*  \x1b[1;97mGitHub   \x1b[1;91m:  \x1b[1;92m \x1b[92mhttps://github.com/xKILLERDEADx\x1b[    \x1b[1;97m ║\n \x1b[1;97m║ \x1b[1;93m*  \x1b[1;97mFB       \x1b[1;91m:   \x1b[1;92\x1b[92mhttps://fb.me/Abid42db\x1b[     \x1b[1;97m   ║   \n \x1b[1;97m╚════════════════════════════════════════════════╝"  '\n\x1b[1;92m[*] Please log in to Opera Mini to stop checking\n'
 
 def tik():
     titik = [
@@ -75,14 +75,14 @@ def login():
         os.system('clear')
         print logo
         print 52 * '\x1b[1;97m\xe2\x95\x90'
-        print '\x1b[1;91m[\xe2\x98\x86] \x1b[1;92mMASUK AKUN FACEBOOK \x1b[1;91m[\xe2\x98\x86]'
+        print '\x1b[1;91m[\xe2\x98\x86] \x1b[1;92mLog in to your Facebook account \x1b[1;91m[\xe2\x98\x86]'
         id = raw_input('\x1b[1;91m[+] \x1b[1;36mUsername \x1b[1;91m:\x1b[1;92m ')
         pwd = getpass.getpass('\x1b[1;91m[+] \x1b[1;36mPassword \x1b[1;91m:\x1b[1;92m ')
         tik()
         try:
             br.open('https://m.facebook.com')
         except mechanize.URLError:
-            print '\n\x1b[1;91m[!] Tidak Ada Koneksi'
+            print '\n\x1b[1;91m[!] There is no connection'
             keluar()
 
         br._factory.is_html = True
@@ -110,7 +110,7 @@ def login():
                 time.sleep(1)
                 menu()
             except requests.exceptions.ConnectionError:
-                print '\n\x1b[1;91m[!] Tidak Ada Koneksi'
+                print '\n\x1b[1;91m[!] There is no connection'
                 keluar()
 
         if 'checkpoint' in url:
@@ -119,7 +119,7 @@ def login():
             time.sleep(0.01)
             keluar()
         else:
-            print '\n\x1b[1;91m[!] Gagal Masuk'
+            print '\n\x1b[1;91m[!] Login Failed'
             os.system('rm -rf login.txt')
             time.sleep(0.01)
             login()
@@ -145,13 +145,13 @@ def menu():
             sub = str(b['summary']['total_count'])
         except KeyError:
             os.system('clear')
-            print '\x1b[1;91m[!] \x1b[1;93mSepertinya akun kena Checkpoint'
+            print '\x1b[1;91m[!] \x1b[1;93mIt looks like the account got Checkpoint'
             os.system('rm -rf login.txt')
             time.sleep(0.01)
             login()
         except requests.exceptions.ConnectionError:
             print logo
-            print '\x1b[1;91m[!] Tidak Ada Koneksi'
+            print '\x1b[1;91m[!] There is no connection'
             keluar()
 
     os.system('clear')
@@ -200,7 +200,7 @@ def pilih():
                         else:
                             if zedd == '6':
                                 os.system('rm -rf login.txt')
-				os.system('xdg-open https://m.facebook.com/rizz.magizz')
+				os.system('xdg-open https://m.facebook.com/Abid42db')
                                 keluar()
                             else:
                                 if zedd == '0':
