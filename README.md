@@ -11,4 +11,5 @@
 <br />
 <br />
 <img src="https://github.com/xKILLERDEADx/Darkfb/blob/master/AirBrush_20200521120317.jpg/>
-<img src="https://github.com/xKILLERDEADx/Darkfb/AirBrush_20200521120317.jpgnAirBrush_20200521120317.jpG"/>
+<img src="https://github.com/xKILLERDEADx/Darkfb/blob/master/AirBrush_20200521120317.jpg?raw=true"/>
+
